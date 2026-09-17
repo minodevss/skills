@@ -14,6 +14,7 @@ Use `--skill <name>` to select a skill, `-g` for a global installation, or `--li
 
 | Name | Description |
 | --- | --- |
+| [commit](skills/commit/SKILL.md) | Atomic commits, pushes, pull requests, and merges after verification. |
 | [devin-maxxing](skills/devin-maxxing/SKILL.md) | Parallel implementation and review with Devin CLI and free SWE-2 Max models. |
 
 Requirements and usage are documented in each skill.
@@ -33,7 +34,7 @@ Requires Python 3.10 or later.
 
 ```sh
 python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements-dev.txt
+.venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python scripts/validate_skills.py
 .venv/bin/python -m unittest discover -s tests -v
 ```
