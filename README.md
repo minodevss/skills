@@ -34,7 +34,7 @@ Requires Python 3.10 or later.
 
 ```sh
 python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements-dev.txt
+.venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python scripts/validate_skills.py
 .venv/bin/python -m unittest discover -s tests -v
 ```
