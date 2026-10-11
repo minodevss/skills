@@ -18,6 +18,7 @@ Use `--skill <name>` to select a skill, `-g` for a global installation, or `--li
 | [commit](skills/commit/SKILL.md) | Atomic commits, pushes, pull requests, and merges after verification. |
 | [deslop](skills/deslop/SKILL.md) | AI-slop cleanup for English and Korean prose, docs, and code, with meaning-preservation checks. |
 | [devin-maxxing](skills/devin-maxxing/SKILL.md) | Parallel implementation and review with Devin CLI and free SWE-2 Max models. |
+| [eli5](skills/eli5/SKILL.md) | Plain explanations of concepts, code, errors, and decisions that keep every claim true. |
 
 Requirements and usage are documented in each skill.
 
