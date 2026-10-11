@@ -14,6 +14,7 @@ Use `--skill <name>` to select a skill, `-g` for a global installation, or `--li
 
 | Name | Description |
 | --- | --- |
+| [asd-ste100](skills/asd-ste100/SKILL.md) | Technical writing by ASD-STE100 Simplified Technical English rules, with a checker and a Korean adaptation. |
 | [commit](skills/commit/SKILL.md) | Atomic commits, pushes, pull requests, and merges after verification. |
 | [deslop](skills/deslop/SKILL.md) | AI-slop cleanup for English and Korean prose, docs, and code, with meaning-preservation checks. |
 | [devin-maxxing](skills/devin-maxxing/SKILL.md) | Parallel implementation and review with Devin CLI and free SWE-2 Max models. |
