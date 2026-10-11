@@ -195,7 +195,8 @@ def check_sentence(sentence, kind, korean):
             spans.append((start, end))
             text = match.group(0).strip()
             if rule_id == "unapproved-word":
-                hint = f"write '{SUBSTITUTES[re.sub(r'\s+', ' ', text.lower())]}' instead; confirm in the Dictionary"
+                alternative = SUBSTITUTES[" ".join(text.lower().split())]
+                hint = f"write '{alternative}' instead; confirm in the Dictionary"
             hits.append((level, rule_id, text, hint))
     if korean:
         for chain in KO_NOUN_CHAIN.findall(QUOTED.sub(" ", INLINE_CODE.sub(" ", sentence))):
