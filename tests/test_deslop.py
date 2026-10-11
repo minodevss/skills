@@ -90,6 +90,13 @@ class ScanTests(unittest.TestCase):
                 lines = [(n, line, True) for n, line in enumerate(path.read_text().splitlines(), 1)]
                 self.assertEqual(scan.scan_lines(str(path), lines)[0], [])
 
+    def test_repository_skill_documents_have_no_strong_or_medium_hits(self):
+        for path in sorted(SKILL.parent.glob("*/SKILL.md")) + sorted(SKILL.parent.glob("*/references/*.md")):
+            with self.subTest(path=str(path.relative_to(SKILL.parent))):
+                lines = [(n, line, True) for n, line in enumerate(path.read_text().splitlines(), 1)]
+                hits = scan.scan_lines(str(path), lines)[0]
+                self.assertEqual([hit for hit in hits if hit["level"] != "weak"], [])
+
 
 class CompareTests(unittest.TestCase):
     def test_identical_text_passes(self):
